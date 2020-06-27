@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  tools:context=".LoginActivity">
+
+  <ImageView
+      android:id="@+id/imageView3"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:srcCompat="@drawable/fflogin" />
+
+  <EditText
+      android:id="@+id/usser"
+      android:layout_width="314dp"
+      android:layout_height="55dp"
+      android:ems="10"
+      android:hint="Usuario" />
+
+  <android.support.v4.widget.Space
+    android:layout_width="wrap_content"
+    android:layout_height="10dp" />
+
+
+  <EditText
+      android:id="@+id/pass"
+      android:layout_width="318dp"
+      android:layout_height="wrap_content"
+      android:ems="10"
+      android:hint="Contraseña"
+      android:inputType="textPassword" />
+
+  <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:onClick="login"
+        android:text="Iniciar session" />
+
+    <Button
+      android:id="@+id/button5"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="0.5"
+      android:text="Limpiar"
+      android:onClick="clear"/>
+  </LinearLayout>
+
+</LinearLayout>
